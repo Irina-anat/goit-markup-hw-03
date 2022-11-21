@@ -16,8 +16,26 @@ body{
 background-color: #FFFFFF;
 color: var(--primary-text-color);
 font-family: Roboto, sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+padding: 0;
+margin: 0;
+}
+
+.container{
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+         outline: 2px solid tomato;
 }
 /*шапка*/
+.page-header{
+
+}
 
 .logo{
 color:var(--accent-color);
@@ -74,31 +92,43 @@ letter-spacing: 0.02em;
 .hero{
 color: #FFFFFF;
 background-color: #2F303A;
+text-align: center;
+width: 1600px;
+height: 600px;
+
 }
 
 .hero-title{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+margin-bottom: 30px;
 }
 
 .hero-button{
+display: inline-block;
+border: 1px solid #000000;
+border-radius: 4px;
+padding: 10px 32px;
+min-width: 152px;
+
+
 background-color: var(--accent-color);
 color:  #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.15);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
 cursor: pointer;
 font-family: inherit;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.86;
-   
-    
-display: flex;
+
 align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 }
 
@@ -110,8 +140,15 @@ border-radius: 4px;
 }
 /*особливості*/
 
+.specials{
+   
+    
+}
+
 .specials-title{
 color: var(--title-text-color); 
+margin-bottom: 10px;
+padding-top:  35px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -127,6 +164,10 @@ letter-spacing: 0.03em;
 
 /*послуги*/
 
+.service{
+    
+}
+
 .section-title{
 color: var(--title-text-color);
 font-weight: 700;
@@ -134,12 +175,20 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+padding-bottom:  50px;
+padding-top: 94px;
 }
+
+
 
 /*команда*/
 
 .komand{
 background-color: var(--primary-bg-color);
+}
+
+.komand-foto{
+margin-bottom: 30px;
 }
 
 .komand-title{
@@ -149,7 +198,7 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-
+padding-bottom: 10px;
 }
 
 .komand-text{
@@ -157,6 +206,7 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+padding-bottom: 30px;
 }
 
 /*підвал*/
@@ -189,11 +239,15 @@ color: rgba(255, 255, 255, 0.6);
 
 /*портфоліо фільтри*/
 .portfolio-btn{
-background-color: var(--primary-bg-color);
-color: var(--title-text-color);
+display: inline-block;
 border: none;
 border-radius: 4px;
+padding: 6px 22px;
+min-width: 73px;
 cursor: pointer;
+
+background-color: var(--primary-bg-color);
+color: var(--title-text-color);
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
@@ -207,6 +261,7 @@ letter-spacing: 0.03em;
 background-color: var(--accent-color);
 color: #FFFFFF;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 /*проекти*/

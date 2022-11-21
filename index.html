@@ -14,6 +14,7 @@
 <body>
     <!--Шапка-->
     <header class="page-header">
+        <div class="container">
         <nav>
             <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
             <ul class="site-nav">
@@ -36,84 +37,93 @@
                 <a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+    </div>
     </header>
     <main>
          <!--Герой-->
-        <section class="hero">
-           <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
-        </section>
-        <!--Особливості h2-->
+     <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
+         <button class="hero-button" type="button">Замовити послугу</button>
+     </section>
+          <!--Особливості h2-->
         <section class="specials">
-            <ul>
-                <li>
-                    <h3 class="specials-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="specials-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
-                <li>
-                    <h3 class="specials-title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="specials-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
-                <li>
-                    <h3 class="specials-title">ПЛАНУВАННЯ</h3>
-                <p class="specials-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
-                <li>
-                    <h3 class="specials-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="specials-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li>
+                        <h3 class="specials-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="specials-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
+                    <li>
+                        <h3 class="specials-title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="specials-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
+                    <li>
+                        <h3 class="specials-title">ПЛАНУВАННЯ</h3>
+                    <p class="specials-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
+                    <li>
+                        <h3 class="specials-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="specials-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
+                </ul>
+            </div>
         </section>
+        
         <!--Послуги-->
-        <section>
-             <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>
-        <li> <img src="./images/box1.jpg" alt="фото послуги 1" width="370" height="294"> 
-        </li>
-        <li>
-            <img src="./images/box2.jpg" alt="фото послуги 2" width="370" height="294">
-        </li>
-        <li>
-            <img src="./images/box3.jpg" alt="фото послуги 3" width="370" height="294">
-        </li>
-        </ul>
-        </section>
+       <section class="service">
+        <div class="container">
+                <h2 class="section-title">Чим ми займаємося</h2>
+           <ul>
+           <li> <img class="service-foto" src="./images/box1.jpg" alt="фото послуги 1" width="370" height="294"> 
+           </li>
+           <li>
+               <img class="service-foto" src="./images/box2.jpg" alt="фото послуги 2" width="370" height="294">
+           </li>
+           <li>
+               <img class="service-foto" src="./images/box3.jpg" alt="фото послуги 3" width="370" height="294">
+           </li>
+           </ul>
+        </div>
+           </section>
         <!--Команда-->
         <section class="komand">
-            <h2 class="section-title">Наша команда</h2>
-            <ul>
-                <li>
-                <img src="./images/foto1.jpg" alt="фото продакт дизайнера" width="270" height="260" >
-                <h3 class="komand-title">Ігор Дем'яненко</h3>
-                <p class="komand-text" lang="en">Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/foto2.jpg" alt="фото фронт енд розробника" width="270" height="260">
-                    <h3 class="komand-title">Ольга Рєпіна</h3>
-                    <p class="komand-text" lang="en">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/foto3.jpg" alt="фото маркетолога" width="270" height="260">
-                    <h3 class="komand-title">Микола Тарасов</h3>
-                    <p class="komand-text" lang="en">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/foto4.jpg" alt="фото дизайнера інтерфейсу" width="270" height="260">
-                    <h3 class="komand-title">Михайло Єрмаков</h3>
-                    <p class="komand-text" lang="en">UI Designer</p>
-                </li>
-            </ul>
-        </section>
-    </main>
+        <div class="container">
+                <h2 class="section-title">Наша команда</h2>
+                <ul>
+                    <li class="komand-card">
+                    <img class="komand-foto" src="./images/foto1.jpg" alt="фото продакт дизайнера" width="270" height="260" >
+                    <h3 class="komand-title">Ігор Дем'яненко</h3>
+                    <p class="komand-text" lang="en">Product Designer</p>
+                    </li>
+                    <li class="komand-card">
+                        <img class="komand-foto" src="./images/foto2.jpg" alt="фото фронт енд розробника" width="270" height="260">
+                        <h3 class="komand-title">Ольга Рєпіна</h3>
+                        <p class="komand-text" lang="en">Frontend Developer</p>
+                    </li>
+                    <li class="komand-card">
+                        <img class="komand-foto" src="./images/foto3.jpg" alt="фото маркетолога" width="270" height="260">
+                        <h3 class="komand-title">Микола Тарасов</h3>
+                        <p class="komand-text" lang="en">Marketing</p>
+                    </li>
+                    <li class="komand-card">
+                        <img class="komand-foto" src="./images/foto4.jpg" alt="фото дизайнера інтерфейсу" width="270" height="260">
+                        <h3 class="komand-title">Михайло Єрмаков</h3>
+                        <p class="komand-text" lang="en">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
+            </section>
+     </main>
     <footer class="footer">
-    <!--Підвал-->
-        <a class="logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
-        <address>
-            <ul>
-                <li>
-                    <a class="address" href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
-                </li>
-                <li><a class="address footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="address footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
-    
-</body>
+            <div class="container">
+            <!--Підвал-->
+                <a class="logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+                <address>
+                    <ul>
+                        <li>
+                            <a class="address" href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li><a class="address footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="address footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            </footer>
+    </body>
 </html>
