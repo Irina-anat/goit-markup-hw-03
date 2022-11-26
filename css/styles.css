@@ -30,9 +30,11 @@ padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
-         outline: 2px solid tomato;
 }
 /*шапка*/
+.page-header{
+border-bottom: 1px solid #ECECEC;
+}
 
 .logo{
 color:var(--accent-color);
@@ -48,11 +50,11 @@ color: #000000;
 }
 
 ul{
- list-style: none;
+list-style: none;
 }
 
 a{
- text-decoration: none;
+text-decoration: none;
 }
 
 .link{
@@ -60,9 +62,8 @@ color: var(--title-text-color);
 }
 
 .page-header .container{
-    display: flex;
-    align-items: center;
-   
+display: flex;
+align-items: center;
 }
 
 .site-nav{
@@ -87,7 +88,7 @@ color: var(--accent-color);
 }
 
 .site-nav .link{
-      display: block;
+display: block;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -95,31 +96,29 @@ letter-spacing: 0.02em;
 }
 
 .item .link{
-    padding-bottom: 32px;
-    padding-top: 32px;
-    }
+padding-bottom: 32px;
+padding-top: 32px;
+}
 
 
 .site-nav .item:not(:last-child){
-    margin-right: 50px;
+margin-right: 50px;
 }
 
 .logo.item{
-    padding-bottom: 25px;
-    padding-top: 24px;
-    padding-right: 93px;
-   }
+padding-bottom: 25px;
+padding-top: 24px;
+padding-right: 93px;
+}
 
 .header-contacts{
-    display: flex;
-    margin-left: auto;
+display: flex;
+margin-left: auto;
 }
+
 .header-contacts .item + .item{
-    margin-left: 50px;
+margin-left: 50px;
 }
-
-
-
 
 /*герой*/
 
@@ -127,8 +126,6 @@ letter-spacing: 0.02em;
 color: #FFFFFF;
 background-color: #2F303A;
 text-align: center;
-
-
 
 }
 
@@ -148,12 +145,10 @@ border-radius: 4px;
 padding: 10px 32px;
 min-width: 152px;
 
-
 background-color: var(--accent-color);
 color:  #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.15);
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 
 cursor: pointer;
 font-family: inherit;
@@ -173,13 +168,17 @@ border-radius: 4px;
 }
 /*особливості*/
 
-.specials {
-    outline: 1px solid tomato;
-}
 .specials-list{
-    display: flex;
+display: flex;
 }
 
+.specials-item{
+margin-right: 30px;
+}
+
+.specials-item:last-child{
+margin-right: 0;
+}
 
 .specials-title{
 color: var(--title-text-color); 
@@ -215,21 +214,34 @@ padding-top: 94px;
 }
 
 .service-item{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 img {
-    display: block;
-    }
-
-
-
+display: block;
+max-width: 100%;
+height: auto;
+}
 
 /*команда*/
 
 .komand{
 background-color: var(--primary-bg-color);
+}
+
+.komand-list{
+display: flex;
+justify-content: space-between;
+
+}
+
+.komand-card{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+margin-bottom: 94px;
+background-color: #FFFFFF;
 }
 
 .komand-foto{
@@ -258,12 +270,22 @@ padding-bottom: 30px;
 
 .footer{
 background-color: #2F303A;
+padding: 60px 0;
+}
+
+.box-footer{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.box-footer .logo{
+padding-bottom: 28px;
 }
 
 .logo-footer{
 color: #FFFFFF;
 }
-
 
 .address{
 color: #FFFFFF;
@@ -271,6 +293,7 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+padding-bottom: 12px;
 }
 
 .address:hover,
@@ -283,6 +306,18 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /*портфоліо фільтри*/
+.portfolio{
+margin-bottom: 94px;
+}
+
+.portfolio-nav{
+display: flex;
+justify-content: center;
+margin-top: 94px;
+margin-bottom: 50px;
+}
+
+
 .portfolio-btn{
 display: inline-block;
 border: none;
@@ -290,6 +325,8 @@ border-radius: 4px;
 padding: 6px 22px;
 min-width: 73px;
 cursor: pointer;
+
+margin-right: 8px;
 
 background-color: var(--primary-bg-color);
 color: var(--title-text-color);
@@ -312,23 +349,22 @@ border-radius: 4px;
 /*проекти*/
 
 .project-container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: aqua;
+display: flex;
+flex-wrap: wrap;
 }
 
 .project-element{
-    width:calc((100% - 60px)/3);
-    background-color: tomato;
-    margin-right: 30px;
-       margin-bottom: 30px;
+width:calc((100% - 60px)/3);
+margin-right: 30px;
+margin-bottom: 30px;
+border: 1px solid #EEEEEE;
 }
 
 .project-element:nth-child(3n){
-    margin-right: 0;
+margin-right: 0;
 }
-   .project-element:nth-last-child(-n + 3){
-    margin-bottom: 0;
+.project-element:nth-last-child(-n + 3){
+margin-bottom: 0;
 }
 
 
