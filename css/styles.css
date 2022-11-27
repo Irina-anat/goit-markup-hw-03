@@ -126,6 +126,8 @@ margin-left: 50px;
 color: #FFFFFF;
 background-color: #2F303A;
 text-align: center;
+padding-top: 90px;
+padding-bottom: 90px;
 
 }
 
@@ -167,6 +169,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
 /*особливості*/
+.specials{
+      padding-top:  94px;
+}
 
 .specials-list{
 display: flex;
@@ -174,6 +179,7 @@ display: flex;
 
 .specials-item{
 margin-right: 30px;
+    flex-basis: calc((100%-60px)/4);
 }
 
 .specials-item:last-child{
@@ -183,7 +189,6 @@ margin-right: 0;
 .specials-title{
 color: var(--title-text-color); 
 margin-bottom: 10px;
-padding-top:  94px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -198,8 +203,9 @@ letter-spacing: 0.03em;
 }
 
 /*послуги*/
-.container.service{
+.service{
 display: flex;
+      padding-bottom: 94px;
 }
 
 .section-title{
@@ -209,8 +215,7 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-padding-bottom:  50px;
-padding-top: 94px;
+     margin-bottom:  50px;
 }
 
 .service-item{
@@ -228,6 +233,8 @@ height: auto;
 
 .komand{
 background-color: var(--primary-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .komand-list{
@@ -240,12 +247,7 @@ justify-content: space-between;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-margin-bottom: 94px;
 background-color: #FFFFFF;
-}
-
-.komand-foto{
-margin-bottom: 30px;
 }
 
 .komand-title{
@@ -263,7 +265,11 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-padding-bottom: 30px;
+}
+
+.komand-information{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*підвал*/
@@ -293,7 +299,7 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-padding-bottom: 12px;
+margin-bottom: 9px;
 }
 
 .address:hover,
@@ -307,14 +313,18 @@ color: rgba(255, 255, 255, 0.6);
 
 /*портфоліо фільтри*/
 .portfolio{
-margin-bottom: 94px;
+     padding-bottom:  94px;
+     padding-top: 94px;
 }
 
 .portfolio-nav{
 display: flex;
 justify-content: center;
-margin-top: 94px;
 margin-bottom: 50px;
+}
+
+.portfolio-list{
+    margin-right: 8px;
 }
 
 
@@ -325,8 +335,6 @@ border-radius: 4px;
 padding: 6px 22px;
 min-width: 73px;
 cursor: pointer;
-
-margin-right: 8px;
 
 background-color: var(--primary-bg-color);
 color: var(--title-text-color);
@@ -374,7 +382,12 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-margin-top: 20px;
+}
+
+.project-informatoin{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 24px;
 }
 
 .project-text{
