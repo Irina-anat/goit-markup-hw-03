@@ -70,6 +70,10 @@ align-items: center;
 display: flex;
 }
 
+.nav-list{
+    display: flex;
+}
+
 .link.contacts{
 color: var(--primary-text-color);
 font-weight: 500;
@@ -87,7 +91,7 @@ color:var(--accent-color);
 color: var(--accent-color);
 }
 
-.site-nav .link{
+.nav-list .link{
 display: block;
 font-weight: 500;
 font-size: 14px;
@@ -101,14 +105,14 @@ padding-top: 32px;
 }
 
 
-.site-nav .item:not(:last-child){
+.nav-list .item:not(:last-child){
 margin-right: 50px;
 }
 
 .logo.item{
 padding-bottom: 25px;
 padding-top: 24px;
-padding-right: 93px;
+margin-right: 93px;
 }
 
 .header-contacts{
@@ -126,8 +130,8 @@ margin-left: 50px;
 color: #FFFFFF;
 background-color: #2F303A;
 text-align: center;
-padding-top: 90px;
-padding-bottom: 90px;
+padding-top: 200px;
+padding-bottom: 200px;
 
 }
 
@@ -206,7 +210,7 @@ letter-spacing: 0.03em;
 /*послуги*/
 .service{
 display: flex;
-      padding-bottom: 94px;
+padding-bottom: 94px;
 }
 
 .section-title{
@@ -300,7 +304,6 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-bottom: 9px;
 }
 
 .address:hover,
@@ -310,6 +313,14 @@ color: var(--accent-color);
 
 .footer-contacts{
 color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list{
+    margin-bottom: 9px;
+}
+
+.footer-list:last-child{
+    margin-bottom: 0;
 }
 
 /*портфоліо фільтри*/
@@ -386,9 +397,7 @@ letter-spacing: 0.06em;
 }
 
 .project-informatoin{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-left: 24px;
+    padding: 20px 24px;  
 }
 
 .project-text{
