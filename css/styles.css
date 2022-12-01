@@ -220,12 +220,16 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-     margin-bottom:  50px;
+margin-bottom:  50px;
 }
 
 .service-item{
 display: flex;
-justify-content: space-between;
+gap: 30px;
+}
+
+.service-card{
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 img {
@@ -238,18 +242,18 @@ height: auto;
 
 .komand{
 background-color: var(--primary-bg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .komand-list{
 display: flex;
-justify-content: space-between;
-
+gap: 30px;
 }
 
 .komand-card{
 display: flex;
+    flex-basis: calc((100% - 3*30px)/4);
 flex-wrap: wrap;
 flex-direction: column;
 background-color: #FFFFFF;
@@ -262,7 +266,7 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .komand-text{
@@ -273,8 +277,8 @@ letter-spacing: 0.03em;
 }
 
 .komand-information{
-    padding-top: 30px;
-    padding-bottom: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 /*підвал*/
